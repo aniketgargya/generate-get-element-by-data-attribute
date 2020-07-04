@@ -1,7 +1,6 @@
 # Generate Get Element by Data Attribute
 
 [![npm version](http://img.shields.io/npm/v/generate-get-element-by-data-attribute.svg?style=flat)](https://npmjs.org/package/generate-get-element-by-data-attribute "View this project on npm")
-[![Build Status](https://travis-ci.com/aniketgargya/generate-get-element-by-data-attribute.svg?branch=master)](https://travis-ci.com/aniketgargya/generate-get-element-by-data-attribute)
 
 This package aims to prevent you from having to write same function over and over again.
 
