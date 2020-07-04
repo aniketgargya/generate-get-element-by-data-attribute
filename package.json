@@ -1,6 +1,6 @@
 {
   "name": "generate-get-element-by-data-attribute",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Generate custom functions that select all child elements with a certain value of an element with a custom data attribute",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
