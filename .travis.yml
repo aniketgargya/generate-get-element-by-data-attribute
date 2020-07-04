@@ -2,9 +2,8 @@ language: node_js
 node_js:
     - "14"
 
-before_deploy:
+before_script:
     - npm run build
-    - ls dist
 
 deploy:
     edge: true
