@@ -4,6 +4,8 @@ node_js:
 
 before_script:
     - npm run build
+    - cat dist/index.js
+    - cat dist/index.d.ts
 
 deploy:
     edge: true
