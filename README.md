@@ -1,13 +1,27 @@
-# NPM Package Starter
+# Generate Get Element by Data Attribute
 
+[![npm version](http://img.shields.io/npm/v/generate-get-element-by-data-attribute.svg?style=flat)](https://npmjs.org/package/generate-get-element-by-data-attribute "View this project on npm")
 [![Build Status](https://travis-ci.com/aniketgargya/generate-get-element-by-data-attribute.svg?branch=master)](https://travis-ci.com/aniketgargya/generate-get-element-by-data-attribute)
 
-This repository is a npm package starter for me. It's extremely simple to use and feel free to use it as well.
+This package aims to prevent you from having to write same function over and over again.
 
-You can use Typescript and Jest to make your packages great for the user and test before you deploy.
+Instead of writing
+```javascript
+document.querySelector("[data-testid=my-first-button");
+document.querySelector("[data-testid=my-second-button");
+document.querySelector("[data-testid=my-third-button");
+```
+each time you would like to access an element from a testid, this package allow you to write
+```javascript
+import { generateGetElementByDataAttribute } from "generate-get-element-by-data-attribute";
 
-Export the functions you want to include in the npm package in ```lib/index.ts```.
+const getElementByTestId = generateGetElementByDataAttribute("testid");
 
-Write your Jest tests in the ```test/``` directory.
+getElementByTestId(document.body, "first-button");
+getElementByTestId(document.body, "second-button");
+getElementByTestId(document.body, "third-button");
+```
 
-Do incorporate Travis CI, add environment variables in your Travis CI project settings. Include your email and token. Get a token at https://www.npmjs.com/settings/(username)/tokens.
+Helpful for writing a lot of Jest tests.
+
+Type definitons are provided!
