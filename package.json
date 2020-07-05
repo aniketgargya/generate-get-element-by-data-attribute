@@ -1,22 +1,20 @@
 {
-  "name": "generate-get-element-by-data-attribute",
-  "version": "1.0.11",
-  "description": "Generate custom functions that select all child elements with a certain value of an element with a custom data attribute",
+  "name": "react-jest-test-utils",
+  "version": "1.0.0",
+  "description": "A collection of useful functions for writing React tests with Jest.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aniketgargya/generate-get-element-by-data-attribute.git"
+    "url": "https://github.com/aniketgargya/react-jest-test-utils.git"
   },
   "scripts": {
     "build": "tsc"
   },
   "keywords": [
     "jest",
-    "DOM",
-    "data",
-    "attribute",
-    "generate"
+    "react",
+    "test"
   ],
   "author": "Aniket Gargya <gargya.aniket@gmail.com>",
   "license": "ISC",
